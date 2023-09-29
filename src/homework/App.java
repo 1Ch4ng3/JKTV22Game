@@ -8,6 +8,7 @@ package homework;
  *
  * @author pupil
  */
+import Tasks.CalendarApp;
 import Tasks.Game;
 import Tasks.NumberParser;
 import Tasks.TemperaturConvertor;
@@ -33,6 +34,8 @@ public class App {
             System.out.println("1. Конвертор температуры");
             System.out.println("2. фокус с числом");
             System.out.println("3. 20 Случайных чисел");
+            System.out.println("4. Game");
+            System.out.println("5. Calendar");
             System.out.print("Номер задачи: ");
             int task = scanner.nextInt();
             switch (task) {
@@ -52,9 +55,13 @@ public class App {
                     RandomArray randomArray = new RandomArray(scanner);
                     randomArray.showArray();
                     break;
-                    case 4:
+                case 4:
                     Game game = new Game(scanner);
                     game.playGame();
+                    break;
+                case 5:
+                    CalendarApp calendarApp = new CalendarApp(scanner);
+                    calendarApp.showCalendar();
                     break;
                 default:
                     System.out.println("Выбирете номер из списка");
