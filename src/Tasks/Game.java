@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author pupil
  */
-class Game {
+public class Game {
     private final Scanner scanner;
     
     public Game() {
